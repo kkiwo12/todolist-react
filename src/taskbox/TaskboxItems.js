@@ -1,26 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FaTrashAlt } from 'react-icons/fa';
+import FlipMove from 'react-flip-move';
 import './taskboxItems.css';
 
 const TaskboxItems = ({ items, bottomRef, deleteHandler }) => {
-  // const transformedItems = items.map((i) => (
-  //   <li key={i.key} className="li-content">
-  //     <span
-  //       className="li-icon"
-  //       role="button"
-  //       onClick={() => console.log(i.key)}
-  //       onKeyDown={() => console.log(i.key)}
-  //       tabIndex={0}
-  //     >
-  //       <FaTrashAlt />
-  //     </span>
-  //     <p className="li-content">{i.content}</p>
-  //   </li>
-  // ));
-
   const itemKeys = Object.keys(items);
-
   const transformedItems = [];
 
   itemKeys.forEach((key) => {
@@ -46,7 +31,11 @@ const TaskboxItems = ({ items, bottomRef, deleteHandler }) => {
 
   return (
     <div className="taskbox-items-container">
-      <ul className="taskbox-list">{transformedItems}</ul>
+      <ul className="taskbox-list">
+        <FlipMove enterAnimation="fade" leaveAnimation="fade">
+          {transformedItems}
+        </FlipMove>
+      </ul>
       <div ref={bottomRef} />
     </div>
   );

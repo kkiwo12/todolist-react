@@ -18,6 +18,7 @@
   background-color: white;
   margin: 0.5rem 1.5rem;
   border-radius: 0.2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .li-content p {
