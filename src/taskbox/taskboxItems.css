@@ -1,6 +1,7 @@
 .taskbox-items-container {
   flex-grow: 1;
   overflow-y: auto;
+  scroll-behavior: smooth; /* makes scrollTop smooth https://github.com/rstacruz/jquery.transit/issues/216 */
 }
 
 .taskbox-items-container ul.taskbox-list {

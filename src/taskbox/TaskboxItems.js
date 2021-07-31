@@ -30,13 +30,12 @@ const TaskboxItems = ({ items, bottomRef, deleteHandler }) => {
   });
 
   return (
-    <div className="taskbox-items-container">
+    <div className="taskbox-items-container" ref={bottomRef}>
       <ul className="taskbox-list">
         <FlipMove enterAnimation="fade" leaveAnimation="fade">
           {transformedItems}
         </FlipMove>
       </ul>
-      <div ref={bottomRef} />
     </div>
   );
 };

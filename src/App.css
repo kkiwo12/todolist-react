@@ -4,11 +4,21 @@ html,
   height: 100%;
 }
 
-#root {
+.content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: ease left 0.5s;
+}
+
+.content.nav-visible {
+  left: 10rem;
 }
 
 body {

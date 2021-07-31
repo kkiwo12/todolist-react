@@ -40,7 +40,8 @@ const TaskboxContainer = () => {
   };
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    //  scroll to the latest item
+    bottomRef.current.scrollTop = bottomRef.current.scrollHeight;
   }, [lastItem]);
 
   return (
