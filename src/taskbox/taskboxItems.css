@@ -1,0 +1,52 @@
+.taskbox-items-container {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.taskbox-items-container ul.taskbox-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.taskbox-items-container li {
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.li-content p {
+  margin-left: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: break-word;
+}
+
+.li-icon {
+  /* border: 1px solid black; */
+}
+
+.li-icon .icon {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ff5722;
+  transition: all 0.2s;
+}
+
+.li-icon .icon:hover {
+  background-color: #e64a19;
+}
+
+.icon svg {
+  transition: all 0.2s;
+}
+
+.icon:hover svg {
+  color: #e2e2e2;
+}

@@ -1,0 +1,19 @@
+.taskbox-container {
+  background-color: #d32f2f;
+  width: 80%;
+  height: 80%;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskbox-header {
+  color: #fff;
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .taskbox-header {
+    text-align: center;
+  }
+}

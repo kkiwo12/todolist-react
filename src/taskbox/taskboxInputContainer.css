@@ -1,0 +1,45 @@
+.taskbox-input-container {
+  background-color: inherit;
+  height: 5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.taskbox-input-container form {
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+  /* justify-content: center; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskbox-input-container #task-input-box {
+  width: 80%;
+  flex-grow: 1;
+  height: 3rem;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.taskbox-input-container #task-input-box:focus {
+  outline: none;
+}
+
+.taskbox-input-container #task-input-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0;
+  background-color: #3f51b5;
+  color: white;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  transition: all 0.2s;
+}
+
+.taskbox-input-container #task-input-button:hover {
+  background-color: #303f9f;
+}

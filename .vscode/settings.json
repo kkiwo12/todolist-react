@@ -1,0 +1,7 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true //source.fixAll.eslint if you only want to fix using eslint.
+    },
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+}
