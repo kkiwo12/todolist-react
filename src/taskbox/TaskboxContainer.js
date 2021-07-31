@@ -45,7 +45,7 @@ const TaskboxContainer = () => {
 
   return (
     <div className="taskbox-container">
-      <h3 className="taskbox-header">Tasks today</h3>
+      <span className="taskbox-header">Tasks today</span>
       <TaskboxItems items={items} bottomRef={bottomRef} deleteHandler={removeItemHandler} />
       <TaskboxInputContainer clickHandler={insertItemHandler} />
     </div>

@@ -5,15 +5,21 @@
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .taskbox-header {
-  color: #fff;
   margin-left: 1.5rem;
+  margin-top: 1rem;
+  color: #fff;
+  width: 7.570625rem;
+  transition: ease all 0.5s;
+  font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 800px) {
   .taskbox-header {
-    text-align: center;
+    margin-left: calc(50% - 3.7853125rem);
+    margin-right: 50%;
   }
 }

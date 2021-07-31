@@ -10,11 +10,14 @@
 }
 
 .taskbox-items-container li {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   color: #fff;
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: white;
+  margin: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
 }
 
 .li-content p {
@@ -22,10 +25,7 @@
   margin-top: 0;
   margin-bottom: 0;
   word-break: break-word;
-}
-
-.li-icon {
-  /* border: 1px solid black; */
+  color: #212121;
 }
 
 .li-icon .icon {
